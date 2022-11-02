@@ -1,12 +1,19 @@
-//prime number or not
+
+function primeCheck(n){
 let count=0;
-for(let i=0;i<=4;i++){
-    if(4%i==0){
+for(let i=0;i<=n;i++){
+    if(n%i==0){
         count++;
     }
 }
 if(count==2){
-    console.log("Yes");
+    return true;
+}
+return false;
+}
+let answer=primeCheck(11);
+if(ans===true){
+console.log("prime");
 }else{
-    console.log("No");
+console.lg("Not prime");
 }
