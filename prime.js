@@ -1,12 +1,21 @@
-//prime number or not
-let count=0;
-for(let i=0;i<=4;i++){
-    if(4%i==0){
-        count++;
+function checkPrime(number){
+  let factors=0;
+   for(a=1;a<=number;a++){
+    if(number%a==0){
+     factor++;
     }
-}
-if(count==2){
-    console.log("Yes");
+   }
+
+if(factor==2){
+ return true;
 }else{
-    console.log("No");
+ return false;
+}
+}
+
+let output=checkPrime(13);
+if(output==true){
+console.log("Prime Number);
+}else{
+console.log("Not a Prime Number);
 }
